@@ -5,6 +5,10 @@ This code updates your op.gg profile every 60 seconds, scrapes your wins and los
 A Sample of what "stats.txt" could look like, dependant on your recent 9 hour stats: Games: 8 | W3 - L4
 This could be usefull to automate, your daily win loss ratio - as seen in twitch streams, where they're still doing it manually.
 
+## Dependencies:
+
+	pip install requests-html
+
 ## How To:
 1. Download the github repo
 2. Open source.py
