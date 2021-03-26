@@ -1,6 +1,5 @@
 import requests,re,random,time
 from time import sleep as s
-from datetime import datetime
 from requests_html import HTMLSession
 
 ua_list = []
@@ -70,5 +69,5 @@ if __name__ == '__main__':
         with open('stats.txt', 'w', encoding="utf-8") as output:output.write(opgg_updt)
         r.session.close()
         r.close()
-        s(60)
+        s(60) # time to wait until next update in seconds
 
