@@ -1,4 +1,4 @@
-# Win, Loss & Amount of Games Counter within Recent 9 Hours - for League of Legends
+# Win, Loss & Amount of Games Counter for League of Legends
 ![GitHub Banner](https://i.imgur.com/B3mCK4N.png)
 ## Description
 This code updates your op.gg profile every 60 seconds, scrapes your wins and losses which occured within the recent 9 hours from it (invisibly in background) and afterwards saves it into a file which is created in the same directory called "stats.txt".
