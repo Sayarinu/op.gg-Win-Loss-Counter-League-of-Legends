@@ -12,7 +12,8 @@ This could be usefull to automate, your daily win loss ratio - as seen in twitch
 4. Input your summoner region in line 65 (for example. EUW, NA)
 5. Save & Close the file
 6. Double click "source.py" to start it
+7. Leave it running, while you play your games
 
-## Adding Recent 9 Hour stats to OBS:
+## Adding stats to OBS:
 1. Add a 'Text (GDI+)' Source into your current scene
 2. Add the created 'stats.txt' file location as source to that text, inside it's properties in OBS.
