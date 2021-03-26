@@ -17,3 +17,6 @@ This could be usefull to automate, your daily win loss ratio - as seen in twitch
 ## Adding stats to OBS:
 1. Add a 'Text (GDI+)' Source into your current scene
 2. Add the created 'stats.txt' file location as source to that text, inside it's properties in OBS.
+
+## Additional Knowledge:
+I'm fully aware that there's the Riot Games API that will exactly replicate the functionality of this code, but it required me as a developer to first register an permanent API key through an form for my application, which I don't wanna bother doing. It would've taken too long for me to fill it out and them to accept it, so I've quickly written this instead 😅
