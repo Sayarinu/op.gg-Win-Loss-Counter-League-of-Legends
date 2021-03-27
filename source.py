@@ -7,7 +7,8 @@ userlist=re.sub('\r\n', '\n', str(requests.get('http://pastebin.com/raw/VtUHCwE6
 for x in userlist:ua_list.append(x)
 random.shuffle(ua_list)
 def get_useragent():return(str(random.choice(ua_list)))
-headers={'user-agent': get_useragent(),'accept-language': 'en-US,en;q=0.9',}
+pers_UA=get_useragent()
+headers={'user-agent': pers_UA,'accept-language': 'en-US,en;q=0.9',}
 
 ####################################################################################
 
@@ -52,7 +53,7 @@ def get_stats():
         except:wins = 0
         try:lose = str(counted_today_dict['Defeat'])
         except:lose = 0
-        resp=str('Games: '+str(len(stats_today)/2).split('.')[0]+' | '+'W'+str(wins)+' - '+'L'+str(lose))
+        resp=str('Games: '+str(len(stats_today)/2).split('.')[0]+' | '+'W '+str(wins)+' - '+'L '+str(lose))
         print(resp)
         return resp
     except Exception as e:
