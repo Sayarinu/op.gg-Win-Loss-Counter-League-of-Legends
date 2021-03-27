@@ -17,7 +17,7 @@ def refresh_opgg():
     elif opgg_update.status_code == 418 or 504:print('Got rate limited, trying to update again in a few seconds; relaying on older stats now.')
     else:
         print('\n'+opgg_update.text)
-        print('ERROR: Op.gg responded unexpectedly (Code: '+opgg_update.status_code+'); Copy & Paste this error into Github > Issues.\n')
+        print('\nERROR: Op.gg responded unexpectedly (Code: '+opgg_update.status_code+'); Copy & Paste this error into Github > Issues.\n')
         s(10)
 
 def get_stats():
