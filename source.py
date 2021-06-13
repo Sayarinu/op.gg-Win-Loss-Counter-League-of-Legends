@@ -7,9 +7,8 @@ userlist=re.sub('\r\n', '\n', str(requests.get('http://pastebin.com/raw/VtUHCwE6
 for x in userlist:ua_list.append(x)
 random.shuffle(ua_list)
 def get_useragent():return(str(random.choice(ua_list)))
-headers={'user-agent': get_useragent(),'accept-language': 'en-US,en;q=0.9',}
-
-####################################################################################
+pers_UA=get_useragent()
+headers={'user-agent': pers_UA,'accept-language': 'en-US,en;q=0.9',}
 
 def refresh_opgg():
     opgg_update = requests.post('https://'+Region+'.op.gg/summoner/ajax/renew.json/', headers=headers, data={'summonerId': re.findall(r'Id=[0-9]+', str(opgg_website.content))[0].strip('Id=')})
@@ -33,7 +32,7 @@ def get_stats():
     for x in range(0, 10):
         game_history.append(r.html.find('#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.RealContent > div > div.Content > div.GameItemList > div:nth-child('+str(x_val)+') > div > div.Content > div.GameStats > div.TimeStamp > span', first=True).text+':'+r.html.find('#SummonerLayoutContent > div.tabItem.Content.SummonerLayoutContent.summonerLayout-summary > div.RealContent > div > div.Content > div.GameItemList > div:nth-child('+str(x_val)+') > div > div.Content > div.GameStats > div.GameResult', first=True).text)
         x_val+=1
-    blacklist = ['day','9 hours','10 hours','11 hours','12 hours','13 hours','14 hours','15 hours','16 hours','17 hours','18 hours','19 hours','20 hours','21 hours','22 hours','23 hours']
+    blacklist = ['10 hours','11 hours','12 hours','13 hours','14 hours','15 hours','16 hours','17 hours','18 hours','19 hours','20 hours','21 hours','22 hours','23 hours']
     filtered_stats = [f for f in game_history if all([word not in f for word in blacklist])]
 
     matches=[]
@@ -74,3 +73,4 @@ if __name__ == '__main__':
         r.session.close()
         r.close()
         s(60) # time to wait until next update in seconds
+
