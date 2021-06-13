@@ -10,8 +10,6 @@ def get_useragent():return(str(random.choice(ua_list)))
 pers_UA=get_useragent()
 headers={'user-agent': pers_UA,'accept-language': 'en-US,en;q=0.9',}
 
-####################################################################################
-
 def refresh_opgg():
     opgg_update = requests.post('https://'+Region+'.op.gg/summoner/ajax/renew.json/', headers=headers, data={'summonerId': re.findall(r'Id=[0-9]+', str(opgg_website.content))[0].strip('Id=')})
     if opgg_update.status_code == 200:print('Successfully Updated op.gg profile!')
