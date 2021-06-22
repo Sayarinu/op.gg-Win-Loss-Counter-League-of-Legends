@@ -11,13 +11,13 @@ This could be usefull to automate, your daily win loss ratio - as seen in twitch
 ## How To:
 1. Download the github repo
 2. Open source.py
-3. Input your League of Legends Ingame Username in line 64
-4. Input your summoner region in line 65 (for example. EUW, NA)
+3. Input your League of Legends Ingame Username in line 62
+4. Input your summoner region in line 63 (for example. EUW, NA)
 5. Save & Close the file
 6. Double click "source.py" to start it
 7. Leave it running, while you play your games
 
-Also in line 36 you can higher or lower the time it counts as a day. If you add '8 Hours' for example, it will in return only count games that were played within a span of 7 hours since 8 hours is then a blacklisted term. You can even edit the way it outputs the Win Loss counter in Line 55.
+Also in line 35 you can higher or lower the time it counts as a day. If you add '8 Hours' for example, it will in return only count games that were played within a span of 7 hours since 8 hours is then a blacklisted term. You can even edit the way it outputs the Win Loss counter in Line 55.
 
 ## Adding stats to OBS:
 1. Add a 'Text (GDI+)' Source into your current scene
