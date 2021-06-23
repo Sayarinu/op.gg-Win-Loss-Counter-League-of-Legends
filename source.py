@@ -10,8 +10,8 @@ pers_UA=get_useragent()
 headers={'user-agent': pers_UA,'accept-language': 'en-US,en;q=0.9',}
 
 if __name__ == '__main__':
-    Username = 'PPMD' #sample: hulksmash1337
-    Region = 'euw' #sample: na or euw
+    Username = 'YourUsername' #sample: hulksmash1337
+    Region = 'YourRegion' #sample: na or euw
     opgg_website = requests.get('https://'+Region+'.op.gg/summoner/userName='+Username.replace(' ','+'), headers=headers)
     while True:
         try:
