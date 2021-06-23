@@ -25,3 +25,5 @@ Also in line 33 you can higher or lower the time it counts as a day. If you add 
 
 ## Additional Knowledge:
 I'm fully aware that there's the Riot Games API that will exactly replicate the functionality of this code, but it required me as a developer to first register an permanent API key through an form for my application, which I don't wanna bother doing. It would've taken too long for me to fill it out and them to accept it, so I've quickly written this instead 😅
+
+Dependant on how many people show me that they're liking the code by giving stars on this repo, I'll expand functionality & push more quality of life updates.
