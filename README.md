@@ -11,8 +11,8 @@ This could be usefull to automate, your daily win loss ratio - as seen in twitch
 ## How To:
 1. Download the github repo
 2. Open source.py
-3. Input your League of Legends Ingame Username in line 13
-4. Input your summoner region in line 14 (for example. EUW, NA)
+3. Input your League of Legends Ingame Username in line 18
+4. Input your summoner region in line 19 (for example. EUW, NA)
 5. Save & Close the file
 6. Double click "source.py" to start it
 7. Leave it running, while you play your games
