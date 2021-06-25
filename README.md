@@ -1,5 +1,5 @@
 # Win, Loss & Amount of Games Counter for League of Legends
-![GitHub Banner](https://repository-images.githubusercontent.com/351744359/ebd6c200-d567-11eb-9a6b-571f486d7749)
+![GitHub Banner](https://repository-images.githubusercontent.com/351744359/c5367c80-d5a3-11eb-96a6-e77c29108869)
 ## Description:
 This code updates your op.gg profile every 3 minutes(op.gg rate limit) only if the summoner is not currently in a game. It scrapes your wins and losses which occured within the recent 9 hours from it (invisibly in background) and afterwards saves it into a file which is created in the same directory called ``stats.txt``. A sample of what it could look like; dependant on your recent 9 hour stats: ``Games: 8 | W 3 - L 5``
 This could be usefull to automate, your daily win loss ratio - as seen in twitch streams, where they're still doing it manually.
