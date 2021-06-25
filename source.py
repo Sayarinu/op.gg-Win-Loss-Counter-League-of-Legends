@@ -18,7 +18,8 @@ if __name__ == '__main__':
     Username = 'YourUsername' #sample: hulksmash1337
     Region = 'YourRegion' #sample: na or euw
     while True:
-        if check_playing(Region, Username) == 0:
+        check = check_playing(Region, Username)
+        if check == 0:
             opgg_website = sess.get('https://'+Region+'.op.gg/summoner/userName='+Username.replace(' ','+'), headers=headers)
             try:
                 global r,session,current_time,possible_update
@@ -72,7 +73,7 @@ if __name__ == '__main__':
                 pass
             r.session.close()
             r.close()
-        elif check_playing(Region, Username) == 1:
+        elif check == 1:
             print('Player: '+Username+' currently ingame; will start checking for updates again once his game ends')
             s(random.uniform(8,15))
 
